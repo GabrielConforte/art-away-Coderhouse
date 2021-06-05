@@ -1,0 +1,142 @@
+/*
+
+colores
+
+naranja: #FF8510
+azul: #0096C8
+cremita: #FFDE9A
+
+*/
+
+
+.miNaranja{
+    color: #FF8510;
+}
+
+.miAzul{
+    color: #0096C8;
+}
+
+.miCremita{
+    color: #FFDE9A;
+}
+
+.hide{
+
+    display: none
+
+
+}
+
+.btn{
+
+    background-color: #0096C8;
+
+}
+
+body{
+    margin: auto;
+    padding: 11px;
+
+}
+
+a{
+    color:black ;
+    text-decoration: none;
+
+}
+
+#card-img-sm{
+    display: block;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+}
+
+#card-img{
+    width: 400px;
+    height: 400px;
+    border: solid;
+    border-color:#FFDE9A;
+     border-radius: 15px;
+    
+}
+
+.iconCategoria{
+
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+
+.iconPrincipal{
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.grid-container {
+    
+    display: grid;
+    height: 100rem;
+    grid-template-columns: 1fr 0.7fr 0.7fr 1fr;
+    grid-template-rows: 0.67fr 1.1fr 0.7fr 1.7fr;
+    gap: 10px 0px;
+    grid-template-areas:
+      "Banner Banner Banner Ingreso"
+      "Presentacion Presentacion Presentacion Presentacion"
+      "Categorias-y-buscador Categorias-y-buscador Categorias-y-buscador Categorias-y-buscador"
+      "Resultados-de-la-busqueda Resultados-de-la-busqueda Resultados-de-la-busqueda Resultados-de-la-busqueda";
+    align-self:auto;
+  }
+
+  
+.grid-item{
+    background-color: #FFDE9A;
+    border:1px solid;
+    border-color: #FFDE9A ;
+    padding: 10px;
+    display: block;
+}
+
+
+  .Banner {  display: block;  grid-area: Banner; border-radius: 15px 0px 0px 15px;}
+  .Ingreso {  grid-area: Ingreso ; border-radius:0px 15px  15px 0px;}
+  .Presentacion { float:left; background-image: url(recursos/WebG.png); background-size:cover;display: block; grid-area: Presentacion; ; border-radius: 15px; background-repeat: no-repeat; }
+  .Categorias-y-buscador { background-color: #FFDE9A; text-align:center;  grid-area: Categorias-y-buscador; border-radius: 15px;}
+  .Resultados-de-la-busqueda { grid-area: Resultados-de-la-busqueda; }
+
+  .abs-center {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
+
+  #contentPedidos{
+      width: 500px;
+      height: 80px;
+  }
+
+  @media screen and (max-width:720px){
+
+    .grid-container{
+        grid-template-columns: 1fr 0.7fr 0.9fr;
+        grid-template-rows: 0.5fr 0.6fr 1.2fr 1.7fr;
+        grid-template-areas:"Banner Banner Banner"
+        "Ingreso Ingreso Ingreso"
+        "Presentacion Presentacion Presentacion"
+        "Categorias-y-buscador Categorias-y-buscador Categorias-y-buscador"
+        "Resultados-de-la-busqueda Resultados-de-la-busqueda Resultados-de-la-busqueda";
+    }
+
+    .iconCategoria{
+
+         width: 100px;
+         height: 100px;
+         margin: auto;
+         
+     }
+
+}

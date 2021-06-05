@@ -1,0 +1,101 @@
+[{
+    "id": 1,
+    "img": "recursos/2.png",
+    "usuario": "Gabriel",
+    "especialidad": "Arte, Scifi, Fantasia",
+    "categoria": "Arte Digital",
+    "atiers": "Dimensiones: 1) LQ - 2) HD - 3) 4k",
+    "btiers": "Fondo: 1) No - 2) Si - 3) Si, uno muy detallado",
+    "default": "default",
+    "portfolio": "Gabriel, es un artista argentino. Se dedica a crear imagenes de epicas batallas futuristicas con un estilo muy propio de el",
+    "reputacion": "5/5"
+    },
+    {
+    "id": 2,
+    "img": "recursos/4.png",
+    "usuario": "Pepe",
+    "especialidad": "Periodistico, Historia",
+    "categoria": "Fotografia",
+    "atiers": "1) Lorem ipsum - 2) dolor sit amet - 3) consectetur ",
+    "btiers": "1) adipiscing - 2) sed eiusmod - 3) tempor",
+    "default": "default",
+    "portfolio": " Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure  Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure",
+    "reputacion": "5/5"
+    },
+    {
+    "id": 3,
+    "img": "recursos/1.png",
+    "usuario": "Juan",
+    "especialidad": "Verídico, Acción",
+    "categoria": "Mixto",
+    "atiers": "1) Lorem ipsum - 2) sit amet - 3) consectetur",
+    "btiers": "1) adipiscing - 2) sed eiusmod - 3) tempor",
+    "default": "default",
+    "portfolio": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus itaque mollitia quia iste aliquam dicta placeat est?",
+    "reputacion": "5/5"
+    },
+    {
+    "id": 5,
+    "img": "recursos/default.png",
+    "usuario": "Maria",
+    "especialidad": "SuperHeroes, Scifi, Anime",
+    "categoria": "Fan Arts",
+    "atiers": "1) adipiscing elit - 2) sed eiusmod - 3) tempor incidunt",
+    "btiers": "1) Lorem ipsum - 2) dolor sit amet - 3) consectetur ",
+    "default": "default",
+    "portfolio": " Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure",
+    "reputacion": "5/5"
+    }
+    ,
+    {
+    "id": 6,
+    "img": "recursos/default.png",
+    "usuario": "Santi",
+    "especialidad": "Oleo, Tradicional, frescos",
+    "categoria": "Pintura",
+    "atiers": "1) adipiscing elit - 2) sed eiusmod - 3) tempor incidunt",
+    "btiers": "1) Lorem ipsum - 2) dolor sit amet - 3) consectetur ",
+    "default": "default",
+    "portfolio": " Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure",
+    "reputacion": "5/5"
+    }
+    ,
+    {
+    "id": 7,
+    "img": "recursos/default.png",
+    "usuario": "Roberto",
+    "especialidad": "Lapiz, Tintas",
+    "categoria": "Dibujo Tradicional",
+    "atiers": "1) adipiscing elit - 2) sed eiusmod - 3) tempor incidunt",
+    "btiers": "1) Lorem ipsum - 2) dolor sit amet - 3) consectetur ",
+    "default": "default",
+    "portfolio": "Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure",
+    "reputacion": "5/5"
+    }
+    ,
+    {
+    "id": 8,
+    "img": "recursos/default.png",
+    "usuario": "Vanessa",
+    "especialidad": "Diseño Grafico, Comercial",
+    "categoria": "Vectorial",
+    "atiers": "1) adipiscing elit - 2) sed eiusmod - 3) tempor incidunt",
+    "btiers": "1) Lorem ipsum - 2) dolor sit amet - 3) consectetur ",
+    "default": "default",
+    "portfolio": "Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure",
+    "reputacion": "5/5"
+    }
+    ,
+    {
+    "id": 9,
+    "img": "recursos/default.png",
+    "usuario": "Tamara",
+    "especialidad": "Fotografia, Edicion de video",
+    "categoria": "Mixto",
+    "atiers": "1) adipiscing elit - 2) sed eiusmod - 3) tempor incidunt",
+    "btiers": "1) Lorem ipsum - 2) dolor sit amet - 3) consectetur ",
+    "default": "default",
+    "portfolio": "Quia id corporis officia et fugiat recusandae illo? At commodi blanditiis rerum iure",
+    "reputacion": "5/5"
+    }
+    ]

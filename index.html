@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="" lang="es">
+
+<head>
+    <title>Art-Away</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/Coder House/Pre-entrega n°3/pluggins/sweetalert2.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://kit.fontawesome.com/3c9f707ee5.js" crossorigin="anonymous"></script>
+    <script src="pluggins/sweetalert2.all.min.js"></script>
+    <script defer src="archive.js"></script>
+    <script defer src="aCompra.js"></script>
+    <script defer src="ajax.js"></script>
+    <script defer src="user.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+
+</head>
+
+<body> 
+    
+    <div class="grid-container">
+        <div id="up"class="Banner grid-item">
+            <div class="row justify-content-around ms-5">
+                <div class="col-md-4 col-lg-1">   
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <img src="recursos/ArtAway.png" class="iconPrincipal" alt="icono principal">   
+                    <div id="mensaje"></div>
+                </div>
+                <div class="col-md-4 col-lg-4">   
+                </div>
+             </div>
+            </div>
+        <div class="Ingreso grid-item container">
+            <p id=sideTextA></p>
+            <button id=btnSide1  class="btn btn-primary m-1 ">Ingresar</button>
+            <button id=btnSide2  class="btn btn-primary m-1">Crear Nuevo usuario</button>
+            <form id="frmCrearUser" class="hide">
+                <div class="row m-1">
+                <label for="nombre" class="col-4">Nuevo Usuario</label>
+                <input type="text" id="nombreN" class="col-6" placeholder=" ">
+                 </div>
+                 <div class="row m-1">
+                <label for="password" class="col-4">Contraseña</label>
+                <input type="password" id="passwordN" class="col-6" placeholder=" ">
+                </div>
+                <div class="row m-1">
+                <label for="password" class="col-4">Confirmar</label>
+                <input type="password" id="passwordC" class="col-6" placeholder=" ">
+                 </div>
+                 <div class="row m-1">
+                <input type="submit" id="btnEnviarN" value="Enviar" class="btn btn-primary col-4"></div>
+            </form>
+
+
+            <form id="frmIngreso" class=" hide">
+                <div class="row m-1">
+                <label for="nombre" class="col-4">User</label>
+                <input type="text" id="nombre" class="col-6" placeholder=" ">
+                 </div>
+                 <div class="row m-1">
+                <label for="password" class="col-4">Pass</label>
+                <input type="password" class="col-6" id="password" placeholder=" ">
+                 </div>
+                 <div class="row m-1">
+                <input type="submit" id="btnEnviar" value="Enviar" class="btn btn-primary col-4"></div>
+            </form>
+            
+            <div id=btnSideHide class="hide">
+
+                <button id="btnSide3" class="btn btn-primary">Cerrar Sesion</button>
+                <div class="card-body">
+                    <div class="card-text"> Tus Pedidos </div>
+                    <article id="contentPedidos" class="overflow-auto">
+                       <div class=""><p id="tuPedido" class="card-title"></p><ul id="listado"></ul>
+                        </div>
+                       
+                    </article>
+                </div>
+                
+            </div>
+            
+            
+
+        </div>
+        <div class="Presentacion grid-item">
+            
+            <div id="userSelectedMenu" class="container">
+                            <div class="row">
+                            <div class="">
+                                    
+                                
+                                </div>
+                            <div class="col-12 col-md-4 col-lg-3 pt-5">
+                                <div class="miNaranja"><h3 id="nameUserCreador" class="card-title text-center">Esto es a Art-Away</h3>
+                                    </div>
+                                    <div>
+                                        <p id="descriptionUsuario" class="card-text text-center">Artistas de todo el pais ofrecen sus servicios en esta pagina. Ya sean dibujos, diseños o manualidades. Puedes participar creandote una cuenta y buscando algo que te guste</p>
+                                    </div>
+                                    <div id="menuPedidos" class="hide">
+                                        <form id="ingresoDatos" >
+                                            <br>
+                                            <div class="form-group">
+                                              <label for="description">Descripcion breve</label>
+                                              <textarea type="text-area" class="form-control" id="descriptionA" aria-describedby="description" placeholder=" " rows="3"></textarea>
+                                              <small id="descriptionHelp" class="form-text text-muted">Se descriptivo.</small>
+                                            </div>
+                                            <div class="form-group">
+                                              <label id="tiers1" for="capTam">Password</label>
+                                              <input type="number" class="form-control" id="tamA" max="3" min="1" placeholder=" ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label id="tiers2" for="capBg">Password</label>
+                                                <input type="number" class="form-control" id="backg" max="3" min="1" placeholder=" ">
+                                              </div>
+                                              <button text="hacer" id="btnPedido" class="btn btn-primary m-1">Enviar</button>
+                                          </form>
+                                        <br>
+                                        <p id=sideTextB></p>
+                                        
+                                       
+                                        <br><br>
+                                        <!-- <button id="apiBut" class="btn btn-primary">TOCAR PARA USAR LA API y conseguir un puntito extra en Coder</button>
+                                        <br> -->
+                                    </div>
+                                                                       
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 pt-sm-1 pt-md-5">
+                                <div id="imgCard" class="card-body">
+                                </div>
+                                </div>
+                                
+                            </div>
+    
+            </div>
+        </div>
+        <div class="Categorias-y-buscador">
+           <div class="abs-center m-3">
+               <input type="text" id="campoBuscador" size="50px" placeholder="Que estas buscando?">
+               <a href="#userSelector"><button id="btnBuscador" class="btn btn-primary"><i class="fas fa-search fa-lg"></i></button></div></a>
+           <div id="" class="row justify-content-center">
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catDibujoTradicional" onclick="buscar('Dibujo Tradicional')"><img src="recursos/Icons-03.svg">Dibujo Tradicional</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catArteDigital" onclick="buscar('Arte Digital')"> <img src="recursos/Icons-05.svg">Arte Digital</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catPintura" onclick="buscar('Pintura')"><img src="recursos/Icons-06.svg">Pintura</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catFotografia" onclick="buscar('Fotografia')"><img src="recursos/Icons-07.svg">Fotografia</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catVectorial" onclick="buscar('Vectorial')"><img src="recursos/Icons-02.svg">Ilustracion Vectorial</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catMixto" onclick="buscar('Mixto')"><img src="recursos/Icons-08.svg">Mixto</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catFanArts" onclick="buscar('Fan Arts')"><img src="recursos/Icons-04.svg">Fan Arts</div></a>
+                <a href="#userSelector" class="col-4 col-md-3 col-lg-2 col-xl-1 m-4 iconCategoria" ><div id="catVerTodo" onclick="buscar('default')"><img src="recursos/Icons-09.svg">Ver Todo</div></a>
+            </div>
+            </div>
+        <div class="Resultados-de-la-busqueda">
+            <div id="userSelector" class="row text-center justify-content-center">
+            </div>
+        </div>
+        
+      </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+</html>
